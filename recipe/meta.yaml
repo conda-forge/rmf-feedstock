@@ -13,7 +13,9 @@ source:
     - swap-template.patch
 
 build:
-  number: 1
+  number: 2
+  # We use SWIG, which does not work with PyPy
+  skip: True         # [python_impl == 'pypy']
 
 requirements:
   build:
