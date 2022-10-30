@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/salilab/rmf/archive/refs/tags/{{ version }}.tar.gz
   sha256: e54c831f63aad2210e5c81c352a81f4c9699e8867cde9c9cd61857713cfd094c
+  patches:
+    - swig-41-exports.patch
 
 build:
   number: 3
