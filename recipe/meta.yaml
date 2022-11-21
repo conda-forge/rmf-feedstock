@@ -1,5 +1,5 @@
 {% set name = "rmf" %}
-{% set version = "1.4" %}
+{% set version = "1.4.1" %}
 
 
 package:
@@ -8,12 +8,10 @@ package:
 
 source:
   url: https://github.com/salilab/rmf/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e54c831f63aad2210e5c81c352a81f4c9699e8867cde9c9cd61857713cfd094c
-  patches:
-    - swig-41-exports.patch
+  sha256: 8ab3a0b13466ecf41e9e42b759c9935d740ceb4698490648a27501b9b27adda0
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
