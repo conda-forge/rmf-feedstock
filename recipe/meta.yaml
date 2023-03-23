@@ -1,5 +1,5 @@
 {% set name = "rmf" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 
 package:
@@ -8,15 +8,16 @@ package:
 
 source:
   url: https://github.com/salilab/rmf/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 8ab3a0b13466ecf41e9e42b759c9935d740ceb4698490648a27501b9b27adda0
+  sha256: cc53760f207faf3523e3ab75d81e41228f28916d7935298fb59455f006f3669a
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - swig
@@ -24,10 +25,12 @@ requirements:
     - ninja
   host:
     - python
+    - numpy
     - boost-cpp
     - hdf5
   run:
     - python
+    - {{ pin_compatible('numpy') }}
     - boost-cpp
     - hdf5
 
