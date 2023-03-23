@@ -1,11 +1,11 @@
-About rmf
-=========
+About rmf-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rmf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://integrativemodeling.org/rmf/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rmf-feedstock/blob/main/LICENSE.txt)
 
 Summary: Library to support reading and writing of RMF files
 
