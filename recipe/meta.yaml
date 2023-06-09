@@ -1,5 +1,5 @@
 {% set name = "rmf" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/salilab/rmf/archive/refs/tags/{{ version }}.tar.gz
-  sha256: cc53760f207faf3523e3ab75d81e41228f28916d7935298fb59455f006f3669a
+  sha256: 9e885b2342bc0896502ca4fd9c1712103af199b9b6c170b8f004fa82feb94ada
 
 build:
   number: 0
