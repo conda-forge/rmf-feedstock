@@ -11,7 +11,7 @@ source:
   sha256: 9e885b2342bc0896502ca4fd9c1712103af199b9b6c170b8f004fa82feb94ada
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -26,12 +26,11 @@ requirements:
   host:
     - python
     - numpy
-    - boost-cpp
+    - libboost-devel
     - hdf5
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - boost-cpp
     - hdf5
 
 test:
