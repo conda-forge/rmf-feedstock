@@ -1,5 +1,5 @@
 {% set name = "rmf" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/salilab/rmf/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 37997f189702b4705f69b2db5f64cef31cfa9ab9eb151dfc0457c72dba422345
+  sha256: 7f1b7babf687513966a9b3366b9c95dbcce14e1fe9fc22d8ff146f0c5681747f
   patches:
     - rmf-boost-system.patch
 
 build:
-  number: 9
+  number: 0
 
 requirements:
   build:
