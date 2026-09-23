@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
+    - libpython                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
@@ -26,6 +27,7 @@ requirements:
     - ninja
   host:
     - python
+    - libpython
     - numpy
     - libboost-devel
     - hdf5
